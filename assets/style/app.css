@@ -1,15 +1,35 @@
-@import "normalize.css";
-@import "grid.css";
-@import "font.css";
-
-:root{
-    /* --primary-color:;
-    --secondary-color:; */
-    --text-color:#333333;
-    --shadow-color:rgba(19, 182 , 255, 24%);
-    --app-bg:#ffffff;
-    --section-bg-color:#ffffff; 
+:root {
+    --primary-color: #0ABEAD;
+    --text-color: #333333;
+    --shadow-color: rgba(19, 182, 255, 24%);
+    --app-bg: #ffffff;
+    --section-bg-color: #ffffff;
 }
+
+
+
+
+/* 
+
+#$#$#$#$#$#$#$#$#$#$#$
+
+-- Reset Styles
+
+#$#$#$#$#$#$#$#$#$#$#$
+
+*/
+
+a {
+    text-decoration: none;
+
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
 
 
 /* 
@@ -30,4 +50,131 @@ body {
     font-family: "Poppins";
     font-size: 1.6rem;
     line-height: 1.5rem;
+}
+
+
+
+/* 
+
+":":":":":":":":
+
+Header
+
+":":":":":"":":
+
+*/
+
+.header {
+    background-color: var(--section-bg-color);
+    box-shadow: 0 .5rem 4rem rgba(4, 195, 255, 19%);
+    z-index: 100;
+    position: fixed;
+    right: 0;
+    left: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+
+}
+
+.nav__logo {
+    color: var(--primary-color);
+    font-family: "Poppins Black";
+    font-size: 6rem;
+
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.menu__item {}
+
+.menu__link {
+    display: block;
+    color: var(--text-color);
+    font-family: 'Poppins Medium';
+    transition: color 200ms ease-in;
+}
+
+.menu__link:hover {
+    color: var(--primary-color);
+}
+
+
+
+.menu__link--active {
+    color: var(--primary-color);
+
+}
+
+.nav__toggle-icon {
+    display: none;
+    width: 4.5rem;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav__toggle-line {
+    width: 4rem;
+    height: 0.5rem;
+    position: relative;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    transition: all 200ms ease-in;
+}
+
+.nav__toggle-line::after,
+.nav__toggle-line::before {
+    content: " ";
+    position: absolute;
+    border-radius: 2rem;
+    width: 4rem;
+    height: 0.4rem;
+    background-color: var(--primary-color);
+    transition: all 200ms ease-in;
+}
+
+.nav__toggle-line::before {
+    top: 1rem;
+}
+
+.nav__toggle-line::after {
+    bottom: 1rem;
+}
+
+.nav__toggle-icon--open .nav__toggle-line {
+    background-color: transparent;
+}
+
+.nav__toggle-icon--open .nav__toggle-line::before {
+    transform: translateY(-1rem) rotate(-45deg);
+}
+
+.nav__toggle-icon--open .nav__toggle-line::after {
+    transform: translateY(1rem) rotate(45deg);
+}
+
+.cover {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    background-color: #393b3b5c;
+}
+
+.cover__show {
+    opacity: 1;
+    z-index: 99;
 }

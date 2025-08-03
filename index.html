@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website</title>
     <link rel="stylesheet" href="assets/style/app.css">
+    <link rel="stylesheet" href="assets/style/grid.css">
+    <link rel="stylesheet" href="assets/style/font.css">
+    <link rel="stylesheet" href="assets/style/normalize.css">
     <link rel="stylesheet" href="assets/style/responsive.css">
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="container">
             <nav class="nav">
-                <h1 class="nav__logo">WA.</h1>
-                <ul class="menu">
+                <h1 class="nav__logo">PA.</h1>
+                <ul class="menu menu--open">
                     <li class="menu__item">
                         <a href="#" class="menu__link menu__link--active">Home</a>
                     </li>
@@ -37,22 +40,13 @@
                         <a href="#" class="menu__link">Contact</a>
                     </li>
                 </ul>
-                <div class="nav__toggle-icon">
-                   <div class="nav__toggle-line">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="feather feather-menu">
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
-                    </svg>
-                   </div>
-                
+                <div class="nav__toggle-icon nav__toggle-icon--open">
+                    <div class="nav__toggle-line"></div>
                 </div>
             </nav>
         </div>
     </header>
-
+    <div class="cover"></div>
     <script src="assets/js/script.js"></script>
 </body>
 
