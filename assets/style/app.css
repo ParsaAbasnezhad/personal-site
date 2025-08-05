@@ -54,7 +54,7 @@ Reset Styles
     box-shadow: 0 1.5rem 4rem rgba(11, 190, 173, 40%);
 }
 
-.btn_app{
+.btn_app {
     background-color: var(--oreng);
     box-shadow: 0 1.5rem 4rem rgba(245, 127, 23, 40%);
 }
@@ -240,7 +240,7 @@ Main
 
 
 .main {
-    padding-top: 12rem;
+    padding-top: 11rem;
 }
 
 
@@ -262,6 +262,10 @@ Mine Home
 
 .home {
     margin-top: 10rem;
+    background-image: url(/assets/image/shap.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 62rem;
 }
 
 .home__content {}
@@ -280,13 +284,14 @@ Mine Home
 .home__title {
     font-family: 'Poppins Bold';
     color: var(--primary-color);
-    font-size: 4rem;
+    font-size: 5rem;
     margin: 3rem 0;
 }
 
 .home__caption {
     margin-top: 2rem;
     margin-bottom: 4rem;
+    opacity: 0.7;
 }
 
 .home__link-wrapper {
@@ -299,13 +304,17 @@ Mine Home
 .home__link {}
 
 .home__photo {
-    width: 50rem ;
-    height: 50rem ;
+    width: 55rem;
+    height: 55rem;
     border-radius: 100%;
-    background-image: url(/assets/image/header-avatar.jpg);
+    background-image: url(/assets/image/file_0000000074d861f68678fe64e08a6469.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     box-shadow: 0 0 3rem rgba(96, 233, 255, 27%);
     border: 3rem solid var(--app-bg)
+}
+
+svg {
+    width: 100%;
 }
