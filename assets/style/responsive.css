@@ -1,3 +1,11 @@
+@media (min-width: 1400px) {
+    .container {
+        width: 1250px;
+    }
+}
+
+
+
 @media screen and (max-width: 1400px) {
     .home__photo {
         width: 45rem;
@@ -13,6 +21,10 @@
     .home__photo {
         width: 38rem;
         height: 38rem;
+    }
+
+    .service {
+        padding: 7rem 2rem;
     }
 
 }
@@ -59,6 +71,7 @@
         justify-content: center;
         gap: 2rem;
     }
+
     .about {
         flex-direction: column;
     }
@@ -103,8 +116,12 @@
         display: flex;
     }
 
-    .about__content{
-        padding:  2rem 4rem;
+    .about__content {
+        padding: 2rem 4rem;
+    }
+
+    .service {
+        padding: 4rem 1rem;
     }
 
 }
@@ -129,8 +146,17 @@
     .home__caption {
         font-size: 1.5rem;
     }
-    .app__btn{
+
+    .app__btn {
         width: 100%;
+    }
+
+    .service {
+        padding: 5rem 2rem;
+    }
+
+    .service__wave {
+        display: none;
     }
 }
 
@@ -138,4 +164,5 @@
     .home__title {
         font-size: 3rem;
     }
+
 }
