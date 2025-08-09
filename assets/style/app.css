@@ -550,12 +550,11 @@ Resume Section
     box-shadow: 0 0 4rem rgb(96 233 255 / 27%);
     position: relative;
     z-index: 5;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 35rem;
-
+    min-height: 40rem;
+    margin-right: 3rem;
 
 }
 
@@ -572,7 +571,7 @@ Resume Section
 }
 
 .resume-list__item {
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.5rem;
     display: flex;
     align-items: center;
     position: relative;
@@ -632,9 +631,20 @@ Resume Content
     border-left: .2rem solid var(--primary-color);
     padding-left: 3rem;
     padding-top: 4rem;
+    /* display: none; */
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
 }
 
-.resume-content--show {}
+
+.resume-content--show {
+    /* display: block; */
+    
+    height: auto;
+    overflow: visible;
+    opacity: 1;
+}
 
 .resume-content__item {
     margin-bottom: 2rem;

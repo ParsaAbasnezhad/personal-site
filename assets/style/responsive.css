@@ -75,6 +75,26 @@
     .about {
         flex-direction: column;
     }
+
+    .resume-list::before,
+    .resume-list__item::before {
+        content: none;
+    }
+    .resume-list__icon{
+        display: none;
+    }
+    .resume-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+
+    }
+    .resume-list__item{
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 }
 
 @media screen and (max-width: 768px) {
