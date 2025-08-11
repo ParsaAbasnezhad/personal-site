@@ -2,11 +2,13 @@ const navToggleIcon = document.querySelector('.nav__toggle-icon');
 const menu = document.querySelector('.menu');
 // const cover = document.querySelector('.cover');
 const resumeListItems = document.querySelectorAll('.resume-list__item');
+const portfoieListItems = document.querySelectorAll('.portfolio-list__item');
+
 
 navToggleIcon.addEventListener('click', function () {
     this.classList.toggle('nav__toggle-icon--open');
     menu.classList.toggle('menu--open');
-    
+
 
 })
 
@@ -24,4 +26,20 @@ resumeListItems.forEach(resumeListItems => {
 
 
 })
+
+
+portfoieListItems.forEach(portfoieListItems => {
+    portfoieListItems.addEventListener('click', function () {
+        document.querySelector('.portfolio-list__item--active').classList.remove('portfolio-list__item--active');
+        document.querySelector('.portfolio-content--show').classList.remove('portfolio-content--show');
+        this.classList.add('portfolio-list__item--active');
+        let contentId = this.getAttribute('data-content-id');
+        document.querySelector(contentId).classList.add('portfolio-content--show')
+
+
+    })
+
+
+})
+
 

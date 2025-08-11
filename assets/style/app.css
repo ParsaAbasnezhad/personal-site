@@ -64,6 +64,16 @@ Reset Styles
     box-shadow: 0 1.5rem 4rem rgba(245, 127, 23, 40%);
 }
 
+.btn_app_1 {
+    background-color: #803AFB;
+    box-shadow: 0 1.5rem 4rem rgba(128, 58, 251, 40%);
+}
+
+.btn_app_2 {
+    background-color: #F5276C;
+    box-shadow: 0 1.5rem 4rem rgba(245, 39, 108, 40%);
+}
+
 
 
 .section__head {
@@ -737,11 +747,22 @@ Portfolio
 
 }
 
-.portfolio-content {}
+.portfolio-content {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all .2s ease-in;
+}
 
-.portfolio-content__img{
+.portfolio-content--show {
+    height: auto;
+    /* overflow: visible; */
+    opacity: 1;
+}
+
+.portfolio-content__img {
     width: 100%;
-} 
+}
 
 
 
@@ -756,7 +777,7 @@ Portfolio
     border-color: var(--primary-color) !important;
 }
 
-.swiper-pagination{
+.swiper-pagination {
     position: static !important;
     margin-top: 2rem;
 }
