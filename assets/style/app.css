@@ -630,7 +630,7 @@ Resume Content
 .resume-content {
     border-left: .2rem solid var(--primary-color);
     padding-left: 3rem;
-    padding-top: 4rem;
+    padding-top: 1rem;
     /* display: none; */
     height: 0;
     overflow: hidden;
@@ -640,7 +640,7 @@ Resume Content
 
 .resume-content--show {
     /* display: block; */
-    
+
     height: auto;
     overflow: visible;
     opacity: 1;
@@ -699,4 +699,64 @@ Resume Content
 
 .resume-content__description {
     margin: 0;
+}
+
+
+
+/* 
+
+][][][][][][][][]][
+
+Portfolio
+
+][][][][][][][][][][
+
+*/
+
+
+.portfolio {}
+
+.portfolio-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    /* gap: 3rem; */
+
+}
+
+.portfolio-list__item {
+    border-radius: 2rem;
+    padding: 1.2rem 3rem;
+}
+
+.portfolio-list__item--active {
+    color: var(--section-bg-color);
+    background-color: var(--primary-color);
+
+
+}
+
+.portfolio-content {}
+
+.portfolio-content__img{
+    width: 100%;
+} 
+
+
+
+.swiper-pagination-bullet {
+    width: 2rem !important;
+    height: 2rem !important;
+    border: .2rem solid #BFBEBE !important;
+    background-color: #fff !important;
+}
+
+.swiper-pagination-bullet-active {
+    border-color: var(--primary-color) !important;
+}
+
+.swiper-pagination{
+    position: static !important;
+    margin-top: 2rem;
 }
