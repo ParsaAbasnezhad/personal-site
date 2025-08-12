@@ -732,12 +732,14 @@ Portfolio
     align-items: center;
     margin-bottom: 4rem;
     /* gap: 3rem; */
+    flex-wrap: wrap;
 
 }
 
 .portfolio-list__item {
     border-radius: 2rem;
     padding: 1.2rem 3rem;
+    cursor: pointer;
 }
 
 .portfolio-list__item--active {
@@ -767,8 +769,8 @@ Portfolio
 
 
 .swiper-pagination-bullet {
-    width: 2rem !important;
-    height: 2rem !important;
+    width: 1.5rem !important;
+    height: 1.5rem !important;
     border: .2rem solid #BFBEBE !important;
     background-color: #fff !important;
 }
@@ -815,7 +817,6 @@ Pricing
     justify-content: center;
     flex-direction: column;
     gap: 1rem;
-    /* height: 11rem; */
     padding: 3rem 0;
 }
 
@@ -884,7 +885,6 @@ Contact us Section
 
 .contactus {
     margin-top: 20rem;
-    margin-bottom: 10rem;
 }
 
 .contactus__wrapper {
@@ -963,4 +963,64 @@ Contact us Section
     height: 4rem;
     border: none;
     box-shadow: 0 0 1rem #dbdbdb;
+}
+
+
+
+/* 
+
+:{:{:{:{:{:{:{:{:{
+
+Footer
+
+:{:{:{:{:{:{:{:{:{
+
+*/
+
+
+
+.footer {
+    padding: 2rem 0;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__left {
+    font-family: 'Poppins SemiBold';
+    font-size: 1.8rem;
+    letter-spacing: .26rem;
+}
+
+.footer__text {}
+
+.footer__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer__cocial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 100%;
+    background-color: var(--text-color);
+    
+}
+
+.footer__cocial svg {
+    width: 70%;
+    fill: var(--app-bg);
+}
+
+.footer__cocial:hover {
+    background-color: var(--primary-color);
+    transition: all 200ms ease-in;
 }

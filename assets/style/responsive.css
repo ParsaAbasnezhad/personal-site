@@ -114,6 +114,12 @@
         margin: 0;
         font-size: 1.6rem;
     }
+    .contactus__map{
+        display: none;
+    }
+    .contact{
+        margin-right: auto;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -197,11 +203,17 @@
     .service__wave {
         display: none;
     }
+    .footer__wrapper{
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
 }
 
 @media screen and (max-width: 476px) {
     .home__title {
         font-size: 3rem;
     }
-
+    .contact{
+        padding: 4.5rem 2rem;
+    }
 }
