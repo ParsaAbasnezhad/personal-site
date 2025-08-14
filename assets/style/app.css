@@ -331,7 +331,7 @@ Mine Home
 
 
 .home {
-    margin-top: 10rem;
+    margin-top: 8rem;
     background-image: url(/assets/image/shap.svg);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -497,7 +497,7 @@ Services
 
 
 .services {
-    margin-top: 4rem;
+    margin-top: 8rem;
 }
 
 .service {
@@ -533,6 +533,22 @@ Services
 
 }
 
+.service__perpal{
+    box-shadow: 0 0 4rem rgba(118, 13, 255, 35%);
+}
+.service__yellow{
+    box-shadow: 0 0 4rem rgba(255, 197, 12, 35%);
+}
+.service__pink{
+    box-shadow: 0 0 4rem rgba(236, 64, 122, 35%);
+}
+.service__oreng{
+    box-shadow: 0 0 4rem rgba(255, 64, 122, 35%);
+}
+.service__green{
+    box-shadow: 0 0 4rem rgba(221, 255, 237, 0.35);
+}
+
 /* 
 
 
@@ -547,7 +563,7 @@ Resume Section
 */
 
 .resume {
-    margin-top: 20rem;
+    margin-top: 8rem;
     box-shadow: 0 0 6rem rgb(19 182 255 / 24%);
     margin-bottom: 10rem;
     padding: 10rem 0;
@@ -601,7 +617,7 @@ Resume Section
     z-index: -1;
     border-radius: 2rem;
     max-width: 26rem;
-    transition: all 200.2ms ease-in;
+    transition: all 0.2s ease-in;
 }
 
 .resume-list__item--active::before {
@@ -611,7 +627,7 @@ Resume Section
 
 .resume-list__item--active {
     color: var(--section-bg-color);
-    transition: all 200.2ms ease-in;
+    transition: all 0.2s ease-in;
 }
 
 .resume-list__icon {
@@ -724,7 +740,9 @@ Portfolio
 */
 
 
-.portfolio {}
+.portfolio {
+    margin-top: 8rem;
+}
 
 .portfolio-list {
     display: flex;
@@ -733,6 +751,7 @@ Portfolio
     margin-bottom: 4rem;
     /* gap: 3rem; */
     flex-wrap: wrap;
+    gap: .5rem;
 
 }
 
@@ -797,7 +816,7 @@ Pricing
 */
 
 .pricing {
-    margin-top: 20rem;
+    margin-top: 8rem;
     box-shadow: 0 0 6rem rgb(19 182 255 / 24%);
     margin-bottom: 10rem;
     padding: 8rem 0 14rem 0;
@@ -884,7 +903,7 @@ Contact us Section
 */
 
 .contactus {
-    margin-top: 20rem;
+    margin-top: 8rem;
 }
 
 .contactus__wrapper {
