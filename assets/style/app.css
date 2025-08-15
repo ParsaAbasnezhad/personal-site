@@ -7,8 +7,29 @@
     --oreng: #F57F17;
 }
 
+:root.dark-theme {
+    --text-color: #95A5C6;
+    --section-bg-color: #1F2935;
+    --app-bg: #161D26;
+}
 
+:root.dark-theme .header,
+:root.dark-theme .home__photo,
+:root.dark-theme .about,
+:root.dark-theme .resume,
+:root.dark-theme .resume-list,
+:root.dark-theme .pricing,
+:root.dark-theme .package {
+    box-shadow: none;
+}
 
+:root.dark-theme .home {
+    background-image: url('/assets/image/shapes/headershape_dark.svg');
+}
+
+:root.dark-theme .resume-content__title{
+      color: #F57F17;
+}
 
 /* 
 
@@ -189,6 +210,7 @@ Header
     position: fixed;
     right: 0;
     left: 0;
+    background-color: var(--app-bg);
 }
 
 .nav {
@@ -429,6 +451,7 @@ About
 .about__content {
     flex-basis: 50%;
     padding: 4rem;
+    background-color: var(--app-bg);
 }
 
 .about__title {
@@ -533,19 +556,23 @@ Services
 
 }
 
-.service__perpal{
+.service__perpal {
     box-shadow: 0 0 4rem rgba(118, 13, 255, 35%);
 }
-.service__yellow{
+
+.service__yellow {
     box-shadow: 0 0 4rem rgba(255, 197, 12, 35%);
 }
-.service__pink{
+
+.service__pink {
     box-shadow: 0 0 4rem rgba(236, 64, 122, 35%);
 }
-.service__oreng{
+
+.service__oreng {
     box-shadow: 0 0 4rem rgba(255, 64, 122, 35%);
 }
-.service__green{
+
+.service__green {
     box-shadow: 0 0 4rem rgba(221, 255, 237, 0.35);
 }
 
@@ -569,6 +596,7 @@ Resume Section
     padding: 10rem 0;
     transform: skewY(-5deg);
     background-color: var(--section-bg-color);
+    background-color: var(--app-bg);
 }
 
 .resume-list {
@@ -704,6 +732,7 @@ Resume Content
     height: 1.8rem;
     border-radius: 100%;
     z-index: -1;
+    box-shadow: 0 0 4rem rgba(96, 233, 255, 27%);
 
 }
 
@@ -792,6 +821,7 @@ Portfolio
     height: 1.5rem !important;
     border: .2rem solid #BFBEBE !important;
     background-color: #fff !important;
+    opacity: 1 !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -821,7 +851,8 @@ Pricing
     margin-bottom: 10rem;
     padding: 8rem 0 14rem 0;
     transform: skewY(-5deg);
-    background-color: var(--section-bg-color);
+     background-color: var(--app-bg);
+   
 }
 
 .package {
@@ -866,6 +897,7 @@ Pricing
 
 .package__body {
     padding: 3rem 0;
+    background-color: var(--section-bg-color);
 }
 
 .package__options {
@@ -933,7 +965,7 @@ Contact us Section
 }
 
 .contact {
-    background-color: var(--app-bg);
+    background-color: var(--section-bg-color);
     box-shadow: 0 0 4rem rgba(19, 182, 155, 30%);
     max-width: 50rem;
     padding: 4.5rem 4rem;
@@ -964,6 +996,7 @@ Contact us Section
     padding: 1.5rem 2.5rem;
     box-shadow: 0 0 4rem rgba(96, 233, 255, 27%);
     border-radius: 1rem;
+    background-color: var(--app-bg);
 }
 
 .contact__input {}
@@ -1023,7 +1056,8 @@ Footer
     gap: 1rem;
 }
 
-.footer__cocial {
+.footer__cocial,
+.change-theme {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1031,7 +1065,8 @@ Footer
     width: 5rem;
     border-radius: 100%;
     background-color: var(--text-color);
-    
+    cursor: pointer;
+
 }
 
 .footer__cocial svg {
@@ -1043,3 +1078,12 @@ Footer
     background-color: var(--primary-color);
     transition: all 200ms ease-in;
 }
+
+
+
+/* 
+
+ParsaAbasnezhad
+my phonnumber: 09309351385
+
+*/

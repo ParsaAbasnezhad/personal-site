@@ -3,6 +3,7 @@ const menu = document.querySelector('.menu');
 // const cover = document.querySelector('.cover');
 const resumeListItems = document.querySelectorAll('.resume-list__item');
 const portfoieListItems = document.querySelectorAll('.portfolio-list__item');
+const changeTheme = document.querySelector('.change-theme');
 
 
 navToggleIcon.addEventListener('click', function () {
@@ -43,3 +44,11 @@ portfoieListItems.forEach(portfoieListItems => {
 })
 
 
+changeTheme.addEventListener('click', function () {
+    document.documentElement.classList.toggle('dark-theme');
+    if (document.documentElement.classList.contains('dark-theme')) {
+        this.innerHTML = '<img src="assets/image/icons8-light-mode-78.png" alt="">';
+}else {
+        this.innerHTML = '<img src="assets/image/icons8-dark-mode-50.png" alt="">';
+    }
+})
